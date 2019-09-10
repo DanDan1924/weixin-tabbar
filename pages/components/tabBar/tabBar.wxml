@@ -1,0 +1,24 @@
+<!--pages/components/tabBar/tabBar.wxml-->
+<view class="tab-bar">
+    <button class="{{rootPath=='index'?'tab-bar-active':'un-active'}}" data-path="index" data-title="客户" bindtap="switchMian">
+        <image  mode="aspectFill" src="{{imgUrl + (rootPath=='index'?'customerLogo.gif?'+diff:'customerLogo.png')}}" ></image>
+        <p>客户</p>
+    </button>
+    <button class="{{rootPath=='comeIn'?'tab-bar-active':'un-active'}}" data-path="comeIn" data-title="收益" bindtap="switchMian">
+        <image  mode="aspectFill" src="{{imgUrl + (rootPath=='comeIn'?'comeIn.gif?'+diff:'comeIn.png')}}" ></image>
+        
+        <p>收益</p>
+    </button>
+    <button bindtap="switchMian" data-path="add">
+        <image class="add-cus"   mode="aspectFill" src="{{imgUrl+'addCustomerLogo.png'}}" ></image>
+    </button>
+ 
+    <button class="{{rootPath=='msg'?'tab-bar-active':'un-active'}}" data-path="msg"  data-title="消息" bindtap="switchMian" >
+        <image  mode="aspectFill" src="{{imgUrl + (rootPath=='msg'?'msgLogo.gif?'+diff:'msgLogo.png')}}" ></image>
+        <p>消息</p>
+    </button>
+    <button class="{{rootPath=='my'?'tab-bar-active':'un-active'}}" data-path="my"  data-title="我的" bindtap="switchMian">
+        <image  mode="aspectFill" src="{{imgUrl + (rootPath=='my'?'personalLogo.gif?'+diff:'personalLogo.png')}}" ></image>
+        <p>我的</p>
+    </button>
+</view>
