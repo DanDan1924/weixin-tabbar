@@ -1,1 +1,67 @@
-/* pages/components/tabBar/tabBar.wxss */
+@import '/app.wxss';
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100rpx;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    z-index:10;
+}
+.tab-bar button {
+    width: 20%;
+    background: #fff;
+    border-radius: 0%;
+    line-height: 1;
+    padding: 0;
+    padding-top: 10rpx;
+}
+
+.tab-bar button p {
+    font-size: 20rpx;
+    margin-top: 10rpx;
+}
+.tab-bar button i {
+    font-size: 48rpx;
+}
+.tab-bar button::after {
+    border: none;
+}
+.tab-bar-active {
+   
+}
+.un-active {
+    color: #313131;
+}
+.tab-bar button span {
+    color: #ff5a5f;
+    display: block;
+    position: absolute;
+    right: 45rpx;
+    top: 10rpx;
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 20rpx;
+    background: #ff5a5f;
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+}
+.findmeat {
+    width: 20%;
+    opacity: 1;
+}
+.findmeat button {
+    width: 100%;
+}
+.other-navigator-hover {
+    color: #fff;
+}
+.tab-bar button image {
+    width: 48rpx;
+    height: 48rpx;
+}
+.add-cus {
+    width: 72rpx !important;
+    height: 72rpx !important;
+}

@@ -1,10 +1,35 @@
 /**app.wxss**/
+/* @import './lib/style/font.wxss'; */
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+page {
+    font-family: PingFangSC-Regular;
+}
+p {
+    display: block;
+}
+page {
+    width: 100%;
+    overflow-x: hidden;
+}
+.mycanvas {
+    width: 750px;
+    height: 1148px;
+    position: fixed;
+    left: 10000px;
+}
+view{
+    font-family:SanFranciscoDisplay-Bold;
+}
+cover-view {
+    white-space: normal;
+}
+.form_class {
+    width: 100%;
+}
